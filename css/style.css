@@ -1,0 +1,406 @@
+
+body{
+    margin: 0;
+  
+}
+
+.container{
+    padding: 0 80px;
+}
+
+.promo{
+    
+    min-height: 350px;
+    background: url(../img/BG.png) center center/cover no-repeat ;
+    padding: 50px 0;
+}
+
+
+.logo_wrap{
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+}
+.logo_image{
+ 
+}
+.logo{
+    text-decoration: none;
+    color: white;
+}
+.logo_text > span{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    
+}
+.nav_list{
+    list-style: none;
+    display: flex;
+}
+.nav_item{
+  
+    margin: 0 25px;
+}
+
+.nav_item > a{
+    color: #fff;
+    text-decoration: none;
+    opacity: .85;
+    transition: opacity 0.3s ease;
+    
+}
+.nav_item :hover{
+    opacity: 1;
+}
+.nav_item :focus{
+    color: black;
+}
+
+
+
+.promo_sign  button{
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 2px;
+    padding: 5px 20px;
+    color: #fff;
+}
+.promo_wrapper{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin: 10% 0;
+}
+.promo_media{
+    margin-top: 100px;
+    display: flex;
+    justify-content:space-between;
+    color: #fff;
+    
+}
+.promo_descr{
+    width: 45%;
+}
+
+.promo_header{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+
+.promo_btns{
+    margin: 38px 0;
+    
+}
+
+.promo_btn{
+    width: 160px;
+    height: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    
+}
+
+ .promo_btn_buy {
+    
+    color: #fff;
+   background-color: #061e37;
+}
+.promo_btn_buy:hover {
+    
+    color:  #061e37;
+   background-color: #fff;
+}
+ .promo_btn_try {
+    margin: 0 30px;
+    background-color: #ffffff;
+    color: #061e37;
+ }
+ .promo_btn_try:hover {
+   
+    background-color: #061e37;
+    color:#ffffff ;
+ }
+
+ .promo_video{
+    
+   
+ }
+ .promo_video img{
+ }
+    
+ /* Easy and Useful part */
+
+ .useful {
+     background-color: #fff;
+     min-height: 300px;
+     color: #b0bec5;
+ }
+/*  .useful_one{ 
+    margin: 0 auto;
+ } */
+ .title{
+    text-align: center;
+    font-size: 50px;
+    
+    color: black;
+    margin: 100px 0 10px;
+ }
+ .subtitle{
+    text-align: center;
+     margin: 10px;
+     font-size: 24px;
+ }
+ .text{
+    width: 500px;
+    text-align: center;
+    margin: 24px auto 0 auto;
+    font-size: 18px;
+    color: #b0bec5;
+ }
+ 
+ .useful_content{
+    
+     margin-top: 80px;
+     display: flex;
+     justify-content: space-between;
+     
+ }
+ .useful_item{
+     width: 27%;
+ }
+ 
+
+ .useful_title{
+     color: black;
+     font-weight: 24px;
+     text-align: center;
+ }
+
+ .useful_icon{
+     text-align: center;
+ }
+ .useful_btn{
+    margin-top: 60px;
+    text-align: center;
+    
+ } 
+ .button_gs button{
+     background-color: #1de9b6;
+     color: #ffffff;
+     
+ }
+ .button_gs button:hover{
+    background-color: #0e9e7a;
+    
+}
+
+/* Color line styles */
+.color_line{
+    
+    margin-top: 50px;
+}
+.color_line_stat{
+    display: flex;
+    
+    
+    
+}
+.color_line_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    min-height: 150px;
+}
+.color_line_header{
+    margin-left: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+.business{
+background-color: #80d8ff;
+}
+.downloads{
+    background-color: #82b1ff;
+}
+.installs{
+    background-color: #b388ff;
+}
+.users{
+    background-color: #ea80fc;
+}
+.color_line_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+/* Services styles */
+
+.services{
+    background-color: #ffffff;
+    min-height: 450px;
+    color: #b0bec5;
+    padding: 100px 0;
+}
+
+/* Tabs styles */
+.tabs{
+margin-top: 100px;
+
+}
+.tabs_item{
+    color: black;
+    width: 800px; 
+    height: 50px;
+    border: 2px solid #061e37;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin:0 auto 20px auto;
+    padding: 0 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
+   
+       
+} 
+.tabs_item_active{
+    height: 240px;
+    cursor: default;
+}
+.tabs_content{
+    display: flex;
+
+}
+.tabs_head{
+ height: 50px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 30px;
+ 
+ 
+
+}
+.tabs_icon{
+    font-size: 18px;
+}
+.tabs_icon >img{
+    width: 25px;
+}
+.tabs_title{
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+.tabs_wrap{
+    display: flex;
+    align-items: center;
+    
+}
+
+.tabs_img{
+    width: 35%;
+    height: 155px;
+    background: url(../img/tab_img.png) center center/cover no-repeat;
+    border-radius: 5px;
+    margin-right: 25px;
+    line-height: 25px;
+}
+.tabs_text{
+    margin-top: 10px;
+    width: 63%;
+    letter-spacing: 0.45px;
+    font-weight: 600;
+ }
+
+ /* comments styles */
+
+ .comments{
+    padding-top: 87px;
+    min-height: 500px;
+    background: url(../img/BG_comments.png) center center/cover no-repeat;
+ }
+ .comment_bloks{
+     
+     display: flex;
+     align-items:center ;
+     justify-content: space-between;
+ }
+ .comments_descrip{
+     
+ }
+ .comments_head{
+     font-size: 45px;
+     color: #fff;
+ }
+ .comments_fill{
+     width: 515px;
+     font-size: 15px;
+     font-weight: 400;
+     line-height: 25px;
+     color: #fff;
+ }
+ .comments_button{
+     margin-top: 100px;
+ }
+
+ .comments_posted{
+    
+    
+ }
+ .comment_item{
+     display: flex;
+     margin-bottom: 80px;
+ }
+ .comment_item:last-child{
+     margin-bottom: 0;
+ }
+ .comment_user_img{
+     display: flex;
+     align-items: center;
+     
+     margin-right: 50px;
+     
+ }
+ .comment_content{
+     
+     padding: 0 30px 0px 20px;
+     min-height: 160px;
+     width: 550px;
+     background-color: #ffffff;
+     border-radius: 5px;
+     overflow: hidden;
+ }
+ .comment_user_post{
+    color: #b0bec5;;
+ }
+/* Team CSS styles */
+.team{
+    min-height: 500px;
+    background-color:#ffffff;
+}
