@@ -404,3 +404,55 @@ margin-top: 100px;
     min-height: 500px;
     background-color:#ffffff;
 }
+.team_crew{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.arrows{
+    margin-top: 50px;
+}
+.worker_card{
+    text-align: center;
+   
+}
+.worker_img{
+    display: flex;
+    justify-content: center;
+}
+.worker_img_circle{
+  
+   /*  background-color: #fbfbfb;
+    width: 180px;
+    height: 180px;
+    padding-top:15px;
+    border-radius: 100%;
+    */
+    
+    
+}
+.worker_img >div >img{
+    border: 20px solid rgb(251, 251, 251);
+    border-radius: 100%;
+    box-shadow: 1px 1px 30px 20px rgba(0, 0, 0, 0.1); 
+    width: 160px;
+    height: 160px;
+    
+}
+.worker_description{
+    width: 645px;
+    color: #90A4AE;
+}
+.worker_references{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.worker_references > div{
+    margin: 0 15px;
+}
+.social_media_img{
+    width: 18px;
+    height: 18px;
+}
