@@ -448,11 +448,14 @@ margin-top: 100px;
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    
 }
 .worker_references > div{
     margin: 0 15px;
+    
 }
 .social_media_img{
     width: 18px;
     height: 18px;
+    
 }
