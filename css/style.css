@@ -414,23 +414,14 @@ margin-top: 100px;
     margin-top: 50px;
 }
 .worker_card{
-    text-align: center;
-   
+    text-align: center;  
 }
 .worker_img{
     display: flex;
     justify-content: center;
 }
 .worker_img_circle{
-  
-   /*  background-color: #fbfbfb;
-    width: 180px;
-    height: 180px;
-    padding-top:15px;
-    border-radius: 100%;
-    */
-    
-    
+        
 }
 .worker_img >div >img{
     border: 20px solid rgb(251, 251, 251);
@@ -457,5 +448,55 @@ margin-top: 100px;
 .social_media_img{
     width: 18px;
     height: 18px;
+    filter: invert(67%) sepia(18%) saturate(268%) hue-rotate(155deg) brightness(93%) contrast(88%);
     
 }
+/* Contact styles */
+.contact_us{
+    min-height: 500px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-around;
+}
+.contact_content{    
+    width: 500px;
+}
+.contact_form{
+    margin-top: 20px;
+}
+.contact_descr{
+    text-align: center;
+}
+.input_wrap{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.input{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: none;
+    height: 30px;
+    width: 200px;
+    display: block;
+}
+.message{
+    width: 99%;
+    height: 100px;
+    resize: none;
+    border-radius: 5px;
+}
+.input_button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox{
+   display: flex;
+   align-items: center;
+}
+.checkbox > span{
+    margin-left: 5px;
+ }
