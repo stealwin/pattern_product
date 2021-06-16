@@ -39,16 +39,18 @@ body{
     align-items: center;
 }
 .nav{
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center;  */   
+   
     
 }
 .nav_list{
     list-style: none;
     display: flex;
+    text-align: right;
+    
 }
 .nav_item{
-  
     margin: 0 25px;
 }
 
@@ -441,7 +443,7 @@ margin-top: 100px;
     margin-top: 10px;
     
 }
-.worker_references > div{
+.worker_references > a{
     margin: 0 15px;
     
 }
@@ -460,6 +462,7 @@ margin-top: 100px;
 }
 .contact_content{    
     width: 500px;
+    margin-bottom:100px ;
 }
 .contact_form{
     margin-top: 20px;
@@ -500,3 +503,66 @@ margin-top: 100px;
 .checkbox > span{
     margin-left: 5px;
  }
+
+ /* footer styles */
+ .footer{
+  background-color: #061e37;
+  padding: 80px 0;
+ }
+ .privacy_hrefs{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+
+ }
+ .privacy{
+     color: #90A4AE;
+     display: flex;  
+ }
+ .privacy_policy > a{
+     text-decoration: none;
+     color: #90A4AE;;
+ }
+ .nav_thing{
+  
+    margin-left: 50px;
+}
+
+.nav_thing > a{
+    color: #fff;
+    text-decoration: none;
+    opacity: .85;
+    transition: opacity 0.3s ease;
+    
+}
+.nav_thing :hover{
+    opacity: 1;
+}
+.nav_thing :focus{
+    color: rgb(80, 219, 37);
+}
+ .privacy_content{
+     display:flex;
+     padding: 0;
+ }
+ .privacy_content  a{
+     text-decoration: none;
+     color: #90A4AE;;
+ }
+ .privacy_content li{
+    margin: 0 10px 0 20px;
+}
+ .privacy_policy{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  
+}
+.contact_social{
+    display: flex;
+    align-items: center;
+   
+}
+.contact_social > a{
+margin-left:25px;
+}
