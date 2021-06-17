@@ -10,7 +10,7 @@ body{
 
 .promo{
     
-    min-height: 350px;
+    min-height: 750px;
     background: url(../img/BG.png) center center/cover no-repeat ;
     padding: 50px 0;
 }
@@ -76,6 +76,9 @@ body{
     border-radius: 2px;
     padding: 5px 20px;
     color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    
 }
 .promo_wrapper{
     display: flex;
@@ -138,9 +141,42 @@ body{
     color:#ffffff ;
  }
 
- .promo_video{
-    
+ .promo_video {
+    position: relative;
    
+ }
+ .video_play{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 150px;
+        color:#061e37;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+       
+ }
+ .video_play > div{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: rgb(6, 30, 55);
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 22px auto;
+        
+ }
+ 
+ 
+ .video_icon{
+     width: 18px;
+     height: 18px;
+     filter: invert(96%) sepia(0%) saturate(15%) hue-rotate(296deg) brightness(104%) contrast(104%);
  }
  .promo_video img{
  }
@@ -500,8 +536,10 @@ margin-top: 100px;
    display: flex;
    align-items: center;
 }
-.checkbox > span{
+
+.checkbox  > span{
     margin-left: 5px;
+    font-weight: bold;
  }
 
  /* footer styles */
