@@ -45,3 +45,22 @@ function showSlides(n){
 
 }
 
+/* Mediaplayer custom button play */
+
+function customPlay(){
+    let playBtn = document.querySelector("#playBtn");
+    let video = document.querySelector("#video");
+    playBtn.addEventListener("click", ()=>{
+        video.play();
+        video.setAttribute('controls', 'controls');
+        playBtn.style.display="none";
+    });
+    video.addEventListener("ended", function(){
+        /* функция не стрелочная, потому что нет
+        контекста вызова, то есть this  не работает */
+        this.src=this.src;
+        playBtn.style.display="block";
+        video.removeAttribute('controls');
+    });
+}
+customPlay();
