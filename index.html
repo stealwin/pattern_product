@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="home">
         <div class="container">
             <header class="header">
                 <a href="#" class="logo">
@@ -23,11 +23,11 @@
                 </a>
                 <nav class="nav">
                     <ul class="nav_list">
-                        <li class="nav_item"><a href="#">Home</a></li>
-                        <li class="nav_item"><a href="#">Service</a></li>
-                        <li class="nav_item"><a href="#">Extension</a></li>
-                        <li class="nav_item"><a href="#">Pricing</a></li>
-                        <li class="nav_item"><a href="#">Help</a></li>
+                        <li class="nav_item"><a href="#home">Home</a></li>
+                        <li class="nav_item"><a href="#useful">Useful</a></li>
+                        <li class="nav_item"><a href="#service">Service</a></li>
+                        <li class="nav_item"><a href="#team">Our team</a></li>
+                        <li class="nav_item"><a href="#contact">Help</a></li>
                     </ul>
 
                 </nav>
@@ -43,8 +43,8 @@
                              Recusandae dolorum cum ullam quod maiores. Totam enim mollitia, 
                              praesentium laborum non in eos atque maiores quas iure blanditiis ipsum quisquam nesciunt.</div>
                          <div class="promo_btns">
-                             <button class="promo_btn promo_btn_buy">buy now</button>
-                              <button class="promo_btn promo_btn_try">try for free</button>
+                             <button class="promo_btn promo_btn_buy" id="btn_buy">buy now</button>
+                              <button class="promo_btn promo_btn_try" id="try_for_btn">try for free</button>
                          </div>    
                      </div>
                      <div class="promo_video">
@@ -61,7 +61,7 @@
                 </div>
         </div>
     </section>
-   <section class="useful">
+   <section class="useful" id="useful">
        <div class="container">
            <div class="useful_one">
                <h1 class="title">Easy & Useful</h1>
@@ -145,7 +145,7 @@
            </div>
        </div>
    </section>
-   <section class="services">
+   <section class="services" id="service">
            <div class="service_text">
             <h1 class="title">Services</h1>             
              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </div>
@@ -286,7 +286,7 @@
            </div>
        </div>
    </section>
-   <section class="team">
+   <section class="team" id="team">
        <div class="container">
            <div class="useful_one">
             <h1 class="title">Our Team</h1>
@@ -355,44 +355,46 @@
            </div>
        </div>
    </section>
-   <section class="contact_us">
-       <div class="container">
-           <div class="contact_content">
+   <section class="contact_us" id="contact">
+       
+           
             <div class="contact_text">
                 <div class="title">Contact Us</div>
-                <div class="contact_descr">
+                <div class="text contact_descr">
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 </div>
             </div>
-            <div class="contact_form">
+            <div class="contact_content">
+            <form action="#" class="contact_form">
                 <div class="input_wrap">
-                    <div class="input_email">
-                        <input type="text" class="input first_name" placeholder="First name">
-                          <input type="text" class="input email" placeholder="E-mail">
+                    <div class="form_wrap">
+                        <input type="text" class="form_inp" name="firstName" placeholder="First name" required>
+                        <input type="text" class="form_inp" name="secondName" placeholder="Second Name" required>
+                          
                     </div>
                     
-                    <div class="input_phone">
-                      <input type="text" class="input  second_name" placeholder="Second Name">
-                     <input type="text" class="input phone" placeholder="Phone">
+                    <div class="form_wrap">
+                     <input type="email" class="form_inp" name="email" placeholder="E-mail" required>
+                     <input type="tel" class="form_inp" name="phone" placeholder="Phone">
                     </div>
                     
                 </div>
                 <div class="input_message">
-                    <textarea class="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea class="message" name="message" placeholder="Message"></textarea>
                    </div>
                    <div class="input_button">
-                       <div class="checkbox"><input type="checkbox"> <span>subscribe to the newsletter</span></div>
+                       <label class="checkbox" for="subs"><input type="checkbox" name="subs" class="checkbox_whole"> subscribe to the newsletter</label>
                        <div class="button_gs">
-                           <button class="promo_btn">Send</button>
+                           <input type="submit" class="promo_btn send" value="send">
                        </div>
                        
                    </div>
                    
                     
-            </div>
+            </form>
            </div>
           
-       </div>
+       
    </section>
     <section class="footer">
        <div class="container">
@@ -410,11 +412,11 @@
                 </a>
                 <nav class="nav">
                     <ul class="nav_list">
-                        <li class="nav_thing"><a href="#">Home</a></li>
-                        <li class="nav_thing"><a href="#">Service</a></li>
-                        <li class="nav_thing"><a href="#">Extension</a></li>
-                        <li class="nav_thing"><a href="#">Pricing</a></li>
-                        <li class="nav_thing"><a href="#">Help</a></li>
+                        <li class="nav_item"><a href="#home">Home</a></li>
+                        <li class="nav_item"><a href="#useful">Useful</a></li>
+                        <li class="nav_item"><a href="#service">Service</a></li>
+                        <li class="nav_item"><a href="#team">Our team</a></li>
+                        <li class="nav_item"><a href="#contact">Help</a></li>
                     </ul>
                 </nav>
             </div>
@@ -445,7 +447,40 @@
         </footer>
        </div>
     </section>
-
+    <div class="popup">
+        <div class="popup_wrap">
+            <div class="popup_form">
+                <form action="#" class="contact_form">
+                    <div class="input_wrap">
+                        <div class="form_wrap">
+                            <input type="text" class="form_inp" name="firstName" placeholder="First name" required>
+                            <input type="text" class="form_inp" name="secondName" placeholder="Second Name" required>
+                              
+                        </div>
+                        
+                        <div class="form_wrap">
+                         <input type="email" class="form_inp" name="email" placeholder="E-mail" required>
+                         <input type="tel" class="form_inp" name="phone" placeholder="Phone">
+                        </div>
+                        
+                    </div>
+                    <div class="input_message">
+                        <textarea class="message" name="message" placeholder="Message"></textarea>
+                       </div>
+                       <div class="input_button">
+                           <label class="checkbox" for="subs"><input type="checkbox" name="subs" class="checkbox_whole"> subscribe to the newsletter</label>
+                           <div class="button_gs">
+                               <input type="submit" class="promo_btn send" value="send">
+                           </div>
+                           
+                       </div>
+                       
+                        
+                </form>
+                <div class="popup_close">X</div>
+            </div>
+        </div>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>

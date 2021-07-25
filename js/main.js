@@ -18,7 +18,7 @@ function aniTabs(){
       
     }
 }
-aniTabs();
+
 /*  */
 let slideIndex=1;
 function slideIndexInit(){
@@ -26,7 +26,7 @@ function slideIndexInit(){
     showSlides(slideIndex);
 }
 
-slideIndexInit();
+
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -63,4 +63,52 @@ function customPlay(){
         video.removeAttribute('controls');
     });
 }
-customPlay();
+
+
+/* Button "Buy" executing */
+function btnBuyDo(){
+    let btnBuy=document.querySelector("#btn_buy");
+    let tryForBtn=document.querySelector("#try_for_btn");
+    let popup = document.querySelector(".popup");
+    let popupClose = document.querySelector(".popup_close");
+
+    btnBuy.addEventListener("click",popupOpen);
+    tryForBtn.addEventListener("click",popupOpen);
+
+    /* popup form close */
+    popupClose.addEventListener("click",()=>{
+        popup.classList.remove("popup_active");
+        document.querySelector("body").style.overflow="auto";
+    });
+    function popupOpen(){
+        popup.classList.add("popup_active");
+        document.querySelector("body").style.overflow="hidden";
+    }
+}
+
+/* animating smooth scroll */
+function smoothScroll(){
+    const anchors = document.querySelectorAll('a[href*="#"]');
+
+    for (let anchor of anchors){
+        anchor.addEventListener('click', function(e){
+            e.preventDefault();
+            const blockId = anchor.getAttribute('href').substr(1);
+            document.getElementById(blockId).scrollIntoView({
+                behavior:'smooth',
+                block:'start'
+            });
+        });
+    }
+}
+
+
+
+
+window.addEventListener("DOMContentLoaded", ()=>{
+    aniTabs();
+    slideIndexInit();
+    customPlay();
+    btnBuyDo();
+    smoothScroll();
+});
