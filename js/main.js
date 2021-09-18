@@ -19,14 +19,79 @@ function aniTabs(){
     }
 }
 
-/*  */
-let slideIndex=1;
+/* slides   */
+
+class Slider{
+	constructor(selector){
+		this.root = document.querySelector(selector);
+		this.btnPrev = this.root.querySelector('.arrows .prev');
+		this.btnNext = this.root.querySelector('.arrows .next');
+	
+		this.images = this.root.querySelectorAll('.card');
+		this.i = 0;
+		this.animated = false;
+
+		this.btnPrev.addEventListener('click', () => { this.prev() });
+		this.btnNext.addEventListener('click', () => { this.next() });
+
+		this.leftAnim = [ {transform: 'translateX(100%)'}, 
+		{transform: 'translateX(0)'} ];
+		this.rightAnim = [ {transform: 'translateX(-100%)'}, 
+		{transform: 'translateX(0)'} ];
+
+	}
+
+	prev(){
+		
+		if(!this.animated){
+			
+			let imgHide = this.images[this.i];
+			
+			this.i = this.i > 0 ? this.i - 1 : this.images.length - 1;
+			this.toogleSlides(imgHide, this.images[this.i]);
+		}
+		
+		
+	}
+
+	next(){
+		if(!this.animated){
+			
+			let imgHide = this.images[this.i];
+		
+			this.i = this.i < this.images.length - 1 ? this.i + 1 : 0;
+			this.toogleSlides(imgHide, this.images[this.i],true);
+			
+		}
+	}
+
+	toogleSlides(imgHide, showImg,isNext=false){
+	
+		this.animated = true;
+        console.log(showImg);
+		showImg.classList.add('showed');
+		
+		showImg.animate( isNext ? this.rightAnim :this.leftAnim, {duration:500} );
+		let hideAnimate = imgHide.animate(isNext ? this.leftAnim : this.rightAnim,
+			{
+				duration:500,
+				direction:'reverse'
+			});
+		hideAnimate.addEventListener("finish",()=>{
+			imgHide.classList.remove('showed');
+			this.animated = false;
+		});
+
+		
+
+	}
+}
+
+/*  let slideIndex=1;
 function slideIndexInit(){
     
     showSlides(slideIndex);
 }
-
-
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -43,7 +108,7 @@ function showSlides(n){
     slides[slideIndex-1].style.display = "block";  
     slides[slideIndex-1].style.transition = "opacity 0.3s ease 0.3s"; 
 
-}
+}  */
 
 /* Mediaplayer custom button play */
 
@@ -107,7 +172,11 @@ function smoothScroll(){
 
 window.addEventListener("DOMContentLoaded", ()=>{
     aniTabs();
-    slideIndexInit();
+    /*  slideIndexInit(); */
+ let slider =new Slider('.team_crew');
+ setInterval(function(){
+    slider.next();
+}, 3000);
     customPlay();
     btnBuyDo();
     smoothScroll();

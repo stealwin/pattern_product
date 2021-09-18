@@ -9,7 +9,6 @@ body{
 }
 
 .promo{
-    
     min-height: 750px;
     background: url(../img/BG.png) center center/cover no-repeat ;
     padding: 50px 0;
@@ -21,9 +20,7 @@ body{
     text-transform: uppercase;
     align-items: center;
 }
-.logo_image{
- 
-}
+
 .logo{
     text-decoration: none;
     color: white;
@@ -451,7 +448,7 @@ margin-top: 100px;
     background-color:#ffffff;
 }
 .team_crew{
-    margin: 50px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     
@@ -459,16 +456,44 @@ margin-top: 100px;
 .arrows{
     margin-top: 50px;
 }
-.worker_card{
-    text-align: center;  
+.arrows > div{
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
 }
+.works_ob{
+    max-width: 860px;
+    width: 100%;
+	text-align: center;
+    
+}
+ .worker_wrap{
+     
+    position: relative;
+    height:640px;
+	overflow: hidden; 
+}
+
+.worker_card >  .card{
+    text-align: center;
+    width: 100%;
+	position: absolute;
+	left:0;
+	transform: translateX(100%);
+
+}
+.worker_card > .card.showed{
+    transform: translateX(0);
+
+ 
+}
+
 .worker_img{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
-.worker_img_circle{
-        
-}
+
 .worker_img >div >img{
     border: 20px solid rgb(251, 251, 251);
     border-radius: 100%;
@@ -478,7 +503,7 @@ margin-top: 100px;
     
 }
 .worker_description{
-    width: 645px;
+    width: 100%;
     color: #90A4AE;
 }
 .worker_references{
