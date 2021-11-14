@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,547 +8,524 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <section class="promo" id="home">
         <div class="container">
-            <header class="header">
-                <a href="#" class="logo">
-                    <div class="logo_wrap">
-                        <img src="icons/logo.svg" alt="logo" class="logo_image">
-                        <div class="logo_text">Dart 
+            <header class="page-header">
+                <a href="#" class="page-header__logo">
+                    <div class="logo__wrap">
+                        <img src="icons/logo.svg" alt="logo" class="logo__image">
+                        <div class="logo__text">Dart
                             <br>
                             <span>Service Manager</span>
-                        </div> 
+                        </div>
                     </div>
-                   
+
                 </a>
                 <nav class="nav">
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="#home">Home</a></li>
-                        <li class="nav_item"><a href="#useful">Useful</a></li>
-                        <li class="nav_item"><a href="#service">Service</a></li>
-                        <li class="nav_item"><a href="#team">Our team</a></li>
-                        <li class="nav_item"><a href="#contact">Help</a></li>
+                    <ul class="nav-list">
+                        <li class="nav-list__item nav-list__item--home"><a href="#home">Home</a></li>
+                        <li class="nav-list__item nav-list__item--useful"><a href="#useful">Useful</a></li>
+                        <li class="nav-list__item nav-list__item--service"><a href="#service">Service</a></li>
+                        <li class="nav-list__item nav-list__item--team"><a href="#team">Our team</a></li>
+                        <li class="nav-list__item nav-list__item--contact"><a href="#contact">Help</a></li>
                     </ul>
 
                 </nav>
-                <div class="promo_sign">
-                    <button>sing up</button>
+                <div class="sign-up">
+                    <button class="sign-up__button">sign up</button>
                 </div>
             </header>
-                <div class="promo_media">
-                     <div class="promo_descr">
-                         <div class="promo_header"> <h1>Lorem ipsum
-                             <br> dolor sit, amet </h1></div> 
-                         <div class="promo_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                             Recusandae dolorum cum ullam quod maiores. Totam enim mollitia, 
-                             praesentium laborum non in eos atque maiores quas iure blanditiis ipsum quisquam nesciunt.</div>
-                         <div class="promo_btns">
-                             <button class="promo_btn promo_btn_buy" id="btn_buy">buy now</button>
-                              <button class="promo_btn promo_btn_try" id="try_for_btn">try for free</button>
-                         </div>    
-                     </div>
-                     <div class="promo_video">
-                        <video  width="600" height="320" src="video/video.mp4"  poster="video/BG_video.png" id="video"></video>
-                        <div class="video_play" id="playBtn">
-                            <div>
-                                <img src="icons/play.svg" class="video_icon" alt="">
-                                
-                            </div>
-                            Watch the video
-                        </div>
-                        
-                     </div>
+            <div class="promo-media">
+                <div class="promo-media__descr">
+                    <div class="descr__header">
+                        <h1>Lorem ipsum
+                            <br> dolor sit, amet
+                        </h1>
+                    </div>
+                    <div class="descr__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Recusandae dolorum cum ullam quod maiores. Totam enim mollitia,
+                        praesentium laborum non in eos atque maiores quas iure blanditiis ipsum quisquam nesciunt.</div>
+                    <div class="descr__btns">
+                        <button class="descr__btn" id="btn_buy">buy now</button>
+                        <button class="descr__btn descr__btn--try" id="try_for_btn">try for free</button>
+                    </div>
                 </div>
+                <div class="promo-media__video">
+                    <video width="600" height="320" src="video/video.mp4" poster="video/BG_video.png"
+                        id="video"></video>
+                    <div class="video__play" id="playBtn">
+                        <div>
+                            <img src="icons/play.svg" class="play__icon" alt="">
+                        </div>
+                        Watch the video
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
-   <section class="useful" id="useful">
-       <div class="container">
-           <div class="useful_one">
-               <h1 class="title">Easy & Useful</h1>
-               <div class="subtitle">Project Management Tool </div>
-                
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud  </div>
-               
+    <section class="useful" id="useful">
+        <div class="container">
+            <div class="useful-top">
+                <h1 class="useful-top__title">Easy & Useful</h1>
+                <div class="useful-top__subtitle">Project Management Tool </div>
+
+                <div class="useful-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud </div>
+
             </div>
-         
-           <div class="useful_content">
-               <div class="useful_item">
-                   <div class="useful_icon">
-                    <img  src="icons/calendar.png" alt="">
-                   </div>
-                   
-                    <h1 class="useful_title">Title Goes Here</h1>
-                    <div class="useful_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-               </div>
-               
-               <div class="useful_item">
-                   <div class="useful_icon">
-                    <img  width="60" height="70" src="icons/man.png" alt="">
-                   </div>
-                   <h1 class="useful_title">Title Goes Here</h1>
-                   <div class="useful_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-               </div>
-               <div class="useful_item">
-                   <div class="useful_icon">
-                       <img  src="icons/worker.png" alt="">
+
+            <div class="useful-content">
+                <div class="useful-content__item">
+                    <div class="item__icon">
+                        <img src="icons/calendar.png" alt="">
                     </div>
-                
-                <h1 class="useful_title">Title Goes Here</h1>
-                <div class="useful_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-               </div>               
-           </div>
-           <div class="useful_btn">
-            <div class="button_gs">
-                <button class="promo_btn promo_btn_gs">Get Started</button>
-               </div>
-           </div>
-       </div>
-   </section>
-   <section class="color_line">
-       <div class="color_line_stat">
-           <div class="color_line_block business">
-              <div class="color_line_icon">
-                  <img src="icons/business.png" alt="">
-              </div>
-              <div class="color_line_header"> 12000+
-                <br>
-                Business</div>
-           </div>
-           <div class="color_line_block downloads">
-                <div class="color_line_icon">
+
+                    <h1 class="item__title">Title Goes Here</h1>
+                    <div class="item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+
+                <div class="useful-content__item">
+                    <div class="item__icon">
+                        <img width="60" height="70" src="icons/man.png" alt="">
+                    </div>
+                    <h1 class="item__title">Title Goes Here</h1>
+                    <div class="item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <div class="useful-content__item">
+                    <div class="item__icon">
+                        <img src="icons/worker.png" alt="">
+                    </div>
+
+                    <h1 class="item__title">Title Goes Here</h1>
+                    <div class="item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+            <div class="useful-btn">
+                <button class="descr__btn descr__btn--green">Get Started</button>
+            </div>
+        </div>
+    </section>
+    <section class="color-line">
+        <div class="color-line__wrapper">
+            <div class="color-line__block block__business">
+                <div class="block__icon">
+                    <img src="icons/business.png" alt="">
+                </div>
+                <div class="block__header"> 12000+
+                    <br>
+                    Business
+                </div>
+            </div>
+            <div class="color-line__block block__downloads">
+                <div class="block__icon">
                     <img src="icons/download.png" alt="">
                 </div>
-                <div class="color_line_header"> 60000+
+                <div class="block__header"> 60000+
                     <br>
-                Downloads</div>
-           </div>
-           <div class="color_line_block installs">
-               <div class="color_line_icon">
-                <img src="icons/installs.png" alt="">
-               </div>
-                <div class="color_line_header"> 30000+
+                    Downloads
+                </div>
+            </div>
+            <div class="color-line__block block__installs">
+                <div class="block__icon">
+                    <img src="icons/installs.png" alt="">
+                </div>
+                <div class="block__header"> 30000+
                     <br>
-                Free Installs</div>
-           </div>
-           <div class="color_line_block users">
-                <div class="color_line_icon">
+                    Free Installs
+                </div>
+            </div>
+            <div class="color-line__block block__users">
+                <div class="block__icon">
                     <img src="icons/pro_users.png" alt="">
                 </div>
-                <div class="color_line_header"> 40000+
+                <div class="block__header"> 40000+
                     <br>
-                Pro Users</div>
-           </div>
-       </div>
-   </section>
-   <section class="services" id="service">
-           <div class="service_text">
-            <h1 class="title">Services</h1>             
-             <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </div>
-           </div>
-           <div class="tabs">
-               <div class="tabs_item">
-                   <div class="tabs_head">
-                       <div class="tabs_wrap">
-                           <div class="tabs_icon">
-                               <img src="icons/trending_up.png" alt="">
-                           </div>
-                           <div class="tabs_title">Statistics</div>
-                       </div>
-                       <div class="tabs_down">
-                           <img src="icons/arrow_drop_down.png" alt="">
-                       </div>
-                   </div>
-                   <div class="tabs_content">
-                       <div class="tabs_img"></div>
-                       <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        <br><br>
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </div>
-                   </div>
-               </div>
-               <div class="tabs_item">
-                   <div class="tabs_head">
-                       <div class="tabs_wrap">
-                           <div class="tabs_icon">
-                               <img src="icons/mail.png" alt="">
-                           </div>
-                           <div class="tabs_title">Inbox</div>
-                       </div>
-                       <div class="tabs_down">
+                    Pro Users
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service" id="service">
+        <div class="service-content">
+            <h1 class="useful-top__title">Services</h1>
+            <div class="useful-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna </div>
+        </div>
+        <div class="service-tabs">
+            <div class="service-tabs__item">
+                <div class="item__head">
+                    <div class="head__wrap">
+                        <div class="tab-icon">
+                            <img src="icons/trending_up.png" alt="">
+                        </div>
+                        <div class="tab-title">Statistics</div>
+                    </div>
+                    <div class="head__down">
                         <img src="icons/arrow_drop_down.png" alt="">
-                       </div>
-                   </div>
-                   <div class="tabs_content">
-                       <div class="tabs_img"></div>
-                       <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+                <div class="item-content">
+                    <div class="item-content__img"></div>
+                    <div class="item-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         <br><br>
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</div>
-                   </div>
-               </div>
-               <div class="tabs_item">
-                   <div class="tabs_head">
-                       <div class="tabs_wrap">
-                           <div class="tabs_icon">
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in
+                    </div>
+                </div>
+            </div>
+            <div class="service-tabs__item">
+                <div class="item__head">
+                    <div class="head__wrap">
+                        <div class="tab-icon">
+                            <img src="icons/mail.png" alt="">
+                        </div>
+                        <div class="tab-title">Inbox</div>
+                    </div>
+                    <div class="head__down">
+                        <img src="icons/arrow_drop_down.png" alt="">
+                    </div>
+                </div>
+                <div class="item-content">
+                    <div class="item-content__img"></div>
+                    <div class="item-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        <br><br>
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in
+                    </div>
+                </div>
+            </div>
+            <div class="service-tabs__item">
+                <div class="item__head">
+                    <div class="head__wrap">
+                        <div class="tab-icon">
                             <img src="icons/group.png" alt="">
-                           </div>
-                           <div class="tabs_title">Team</div>
-                       </div>
-                       <div class="tabs_down">
+                        </div>
+                        <div class="tab-title">Team</div>
+                    </div>
+                    <div class="head__down">
                         <img src="icons/arrow_drop_down.png" alt="">
-                       </div>
-                   </div>
-                   <div class="tabs_content">
-                       <div class="tabs_img"></div>
-                       <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+                <div class="item-content">
+                    <div class="item-content__img"></div>
+                    <div class="item-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         <br><br>
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</div>
-                   </div>
-               </div>
-               <div class="tabs_item">
-                   <div class="tabs_head">
-                       <div class="tabs_wrap">
-                           <div class="tabs_icon">
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in
+                    </div>
+                </div>
+            </div>
+            <div class="service-tabs__item">
+                <div class="item__head">
+                    <div class="head__wrap">
+                        <div class="tab-icon">
                             <img src="icons/settings.png" alt="">
 
-                           </div>
-                           <div class="tabs_title">Settings</div>
-                       </div>
-                       <div class="tabs_down">
+                        </div>
+                        <div class="tab-title">Settings</div>
+                    </div>
+                    <div class="head__down">
                         <img src="icons/arrow_drop_down.png" alt="">
-                       </div>
-                   </div>
-                   <div class="tabs_content">
-                       <div class="tabs_img"></div>
-                       <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+                <div class="item-content">
+                    <div class="item-content__img"></div>
+                    <div class="item-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         <br><br>
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</div>
-                   </div>
-               </div>
-               <div class="tabs_item">
-                   <div class="tabs_head">
-                       <div class="tabs_wrap">
-                           <div class="tabs_icon">
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in
+                    </div>
+                </div>
+            </div>
+            <div class="service-tabs__item">
+                <div class="item__head">
+                    <div class="head__wrap">
+                        <div class="tab-icon">
                             <img src="icons/rss_feed.png" alt="">
-                           </div>
-                           <div class="tabs_title">Feed</div>
-                       </div>
-                       <div class="tabs_down">
+                        </div>
+                        <div class="tab-title">Feed</div>
+                    </div>
+                    <div class="head__down">
                         <img src="icons/arrow_drop_down.png" alt="">
-
-                       </div>
-                   </div>
-                   <div class="tabs_content">
-                       <div class="tabs_img"></div>
-                       <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </div>
+                </div>
+                <div class="item-content">
+                    <div class="item-content__img"></div>
+                    <div class="item-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         <br><br>
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</div>
-                   </div>
-               </div>
-           </div>
-   </section>
-   <section class="comments">
-       <div class="container">
-           <div class="comment_bloks">
-            <div class="comments_descrip">
-                <div class="comments_text">
-                    <h1 class="comments_head">What our customers 
-                        <br> have to say about us.</h1>
-                    <div class="comments_fill">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
-                </div>
-                <div class="comments_button">
-                    <button class="promo_btn promo_btn_buy">Get Started</button>
-                </div>
-            </div>
-            <div class="comments_posted">
-                <div class="comment_item">
-                    <div class="comment_user_img">
-                        <img src="icons/jon_doe.png" alt="">
-                    </div>
-                    <div class="comment_content">
-                        <h1 class="comment_user_name">John Doe</h1>
-                        <div class="comment_user_post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
-                    </div>
-                </div>
-                <div class="comment_item">
-                    <div class="comment_user_img">
-                        <img src="icons/khalessi.png" alt="">
-                    </div>
-                    <div class="comment_content">
-                        <h1 class="comment_user_name">Khalessi</h1>
-                        <div class="comment_user_post">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure dolor in reprehenderit in
                     </div>
                 </div>
             </div>
-           </div>
-       </div>
-   </section>
-   <section class="team" id="team">
-       <div class="container">
-           <div class="useful_one">
-            <h1 class="title">Our Team</h1>
-            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </div>
-           </div>
-           <div class="team_crew">
-              
-            <div class="arrows">
-                <!-- <img src="icons/previ.png" onclick="plusSlides(1)" alt=""> -->
-                <div class="prev" > < </div>
-                
-            </div> 
-                <div class="works_ob">
-                   
-                <div class="worker_wrap">
-                    <div class="worker_card">
-                        <div class="card showed" id="sophie">
-                            <div class="worker_img">
-                                <div class="worker_img_circle">
-                                    <img src="img/Sophie.png" alt="">
-                                </div>
-                                
-                            </div>
-                               <div class="worker_name">
-                                   <h1>Sophie Turner</h1>
-                               </div>
-                               <div class="worker_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </div>
-                               <div class="worker_references">
-                                   <a href="#" class="twitter">
-                                       <img class="social_media_img" src="icons/twitter.svg" alt="">
-                                   </a>
-                                   <a href="" class="facebook">
-                                    <img class="social_media_img" src="icons/facebook.svg" alt="">
-                                   </a>
-                                   <a href="" class="linkedin">
-                                    <img class="social_media_img" src="icons/linkedin.svg" alt="">
-                                   </a>
-                               </div>
-                           </div>
-                           <div class="card" id="john">
-                            <div class="worker_img">
-                                <div class="worker_img_circle">
-                                    <img src="img/jonh.jpg" alt="">
-                                </div>
-                                
-                            </div>
-                               <div class="worker_name">
-                                   <h1>Jonh Doe</h1>
-                               </div>
-                               <div class="worker_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima voluptas accusantium voluptatem facere? Omnis, tenetur neque consequuntur aspernatur autem numquam quisquam. Explicabo laborum provident, quaerat eius a optio ea. </div>
-                               <div class="worker_references">
-                                   
-                                    <a href="#" class="twitter">
-                                        <img class="social_media_img" src="icons/twitter.svg" alt="">
-                                    </a>
-                                    <a href="" class="facebook">
-                                     <img class="social_media_img" src="icons/facebook.svg" alt="">
-                                    </a>
-                                    <a href="" class="linkedin">
-                                     <img class="social_media_img" src="icons/linkedin.svg" alt="">
-                                    </a>
-                                   
-                               </div>
-                           </div>
+        </div>
+    </section>
+    <section class="comments">
+        <div class="container">
+            <div class="comment-block">
+                <div class="comment-block__wrapper">
+                    <div class="comment-descr">
+                        <h1 class="comment-descr__head">What our customers
+                            <br> have to say about us.
+                        </h1>
+                        <div class="comment-descr__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna</div>
                     </div>
-                   
-                   
-                   <!--  <div class="arrows">
-                         <img src="icons/previ.png" onclick="plusSlides(1)" alt="">
-                        <div class="prev" > <<< </div> -->
-                  <!--   <div class="worker_card worker_card_sophie">
-                        <div class="worker_img">
-                            <div class="worker_img_circle">
-                                <img src="img/Sophie.png" alt="">
-                            </div>
-                            
+                    <div class="comment-button">
+                        <button class="descr__btn descr__btn">Get Started</button>
+                    </div>
+                </div>
+                <div class="comment-block__posted">
+                    <div class="posted-item">
+                        <div class="posted-item__user-img">
+                            <img src="icons/jon_doe.png" alt="">
                         </div>
-                           <div class="worker_name">
-                               <h1>Sophie Turner</h1>
-                           </div>
-                           <div class="worker_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </div>
-                           <div class="worker_references">
-                               <a href="#" class="twitter">
-                                   <img class="social_media_img" src="icons/twitter.svg" alt="">
-                               </a>
-                               <a href="" class="facebook">
-                                <img class="social_media_img" src="icons/facebook.svg" alt="">
-                               </a>
-                               <a href="" class="linkedin">
-                                <img class="social_media_img" src="icons/linkedin.svg" alt="">
-                               </a>
-                           </div>
-                       </div>
-                       <div class="worker_card worker_card_jonh">
-                        <div class="worker_img">
-                            <div class="worker_img_circle">
-                                <img src="img/jonh.jpg" alt="">
-                            </div>
-                            
+                        <div class="posted-item__content">
+                            <h1 class="content__username">John Doe</h1>
+                            <div class="content__user-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
                         </div>
-                           <div class="worker_name">
-                               <h1>Jonh Doe</h1>
-                           </div>
-                           <div class="worker_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minima voluptas accusantium voluptatem facere? Omnis, tenetur neque consequuntur aspernatur autem numquam quisquam. Explicabo laborum provident, quaerat eius a optio ea. </div>
-                           <div class="worker_references">
-                               
-                                <a href="#" class="twitter">
-                                    <img class="social_media_img" src="icons/twitter.svg" alt="">
-                                </a>
-                                <a href="" class="facebook">
-                                 <img class="social_media_img" src="icons/facebook.svg" alt="">
-                                </a>
-                                <a href="" class="linkedin">
-                                 <img class="social_media_img" src="icons/linkedin.svg" alt="">
-                                </a>
-                               
-                           </div>
-                       </div> -->
+                    </div>
+                    <div class="posted-item">
+                        <div class="posted-item__user-img">
+                            <img src="icons/khalessi.png" alt="">
+                        </div>
+                        <div class="posted-item__content">
+                            <h1 class="content__username">Khalessi</h1>
+                            <div class="content__user-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
+                        </div>
+                    </div>
                 </div>
-                
             </div>
-            <div class="arrows">
-                <!-- <img src="icons/previ.png" onclick="plusSlides(1)" alt=""> -->
-               
-                <div class="next" >></div>
+        </div>
+    </section>
+    <section class="team" id="team">
+        <div class="container">
+            <div class="useful-top">
+                <h1 class="useful-top__title">Our Team</h1>
+                <div class="useful-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna </div>
             </div>
-              <!--  <div class="arrows">
-               <img src="icons/next.png" onclick="plusSlides(1)" alt="">
-              <div class="next" >></div>
+            <div class="team-crew">
 
-            </div>
-                -->
-           </div>
-       </div>
-   </section>
-   <section class="contact_us" id="contact">
-       
-           
-            <div class="contact_text">
-                <div class="title">Contact Us</div>
-                <div class="text contact_descr">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                <div class="team-crew__arrows">
+                    <div class="arrow__prev">
+                        < </div>
+
+                    </div>
+                    <div class="worker-continer">
+
+                        <div class="worker-wrapper">
+                            <div class="worker-cards">
+                                <div class="worker-card worker-card--showed" id="sophie">
+                                    <div class="worker-card__img">
+                                        <img class="img-round" src="img/Sophie.png" alt="">
+                                    </div>
+                                    <div class="worker-card__name">
+                                        <h1>Sophie Turner</h1>
+                                    </div>
+                                    <div class="worker-card__description">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt </div>
+                                    <div class="worker-card__references">
+                                        <a href="#" class="twitter twitter--turner">
+                                            <img class="social-media-img" src="icons/twitter.svg" alt="">
+                                        </a>
+                                        <a href="" class="facebook facebook--turner">
+                                            <img class="social-media-img" src="icons/facebook.svg" alt="">
+                                        </a>
+                                        <a href="" class="linkedin linkedin--turner">
+                                            <img class="social-media-img" src="icons/linkedin.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="worker-card" id="john">
+                                    <div class="worker-card__img">
+                                        <img class="img-round" src="img/jonh.jpg" alt="">
+                                    </div>
+                                    <div class="worker-card__name">
+                                        <h1>Jonh Doe</h1>
+                                    </div>
+                                    <div class="worker-card__description">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Laudantium minima voluptas accusantium voluptatem facere?
+                                        Omnis, tenetur neque consequuntur aspernatur autem numquam quisquam. Explicabo
+                                        laborum provident, quaerat eius a optio ea. </div>
+                                    <div class="worker-card__references">
+
+                                        <a href="#" class="twitter twitter--doe">
+                                            <img class="social-media-img" src="icons/twitter.svg" alt="">
+                                        </a>
+                                        <a href="" class="facebook facebook--doe">
+                                            <img class="social-media-img" src="icons/facebook.svg" alt="">
+                                        </a>
+                                        <a href="" class="linkedin linkedin--doe">
+                                            <img class="social-media-img" src="icons/linkedin.svg" alt="">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="team-crew__arrows">
+
+                        <div class="arrow__next">></div>
+                    </div>
+
                 </div>
             </div>
-            <div class="contact_content">
-            <form action="#" class="contact_form">
-                <div class="input_wrap">
-                    <div class="form_wrap">
-                        <input type="text" class="form_inp" name="firstName" placeholder="First name" required>
-                        <input type="text" class="form_inp" name="secondName" placeholder="Second Name" required>
-                          
+    </section>
+    <section class="contact-us" id="contact">
+
+
+        <div class="contact-us__text">
+            <div class="useful-top__title">Contact Us</div>
+            <div class="useful-top__text contact_descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+            </div>
+        </div>
+        <div class="contact-us__content">
+            <form action="#" class="contact-us-form">
+                <div class="form-input-wrap">
+                    <div class="input-blocks">
+                        <input type="text" class="input-element input-element--first" name="firstName"
+                            placeholder="First name" required>
+                        <input type="text" class="input-element input-element--second" name="secondName"
+                            placeholder="Second Name" required>
+
                     </div>
-                    
-                    <div class="form_wrap">
-                     <input type="email" class="form_inp" name="email" placeholder="E-mail" required>
-                     <input type="tel" class="form_inp" name="phone" placeholder="Phone">
+
+                    <div class="input-blocks">
+                        <input type="email" class="input-element input-element--email" name="email" placeholder="E-mail"
+                            required>
+                        <input type="tel" class="input-element input-element--phone" name="phone" placeholder="Phone">
                     </div>
-                    
+
                 </div>
-                <div class="input_message">
-                    <textarea class="message" name="message" placeholder="Message"></textarea>
-                   </div>
-                   <div class="input_button">
-                       <label class="checkbox" for="subs"><input type="checkbox" name="subs" class="checkbox_whole"> subscribe to the newsletter</label>
-                       <div class="button_gs">
-                           <input type="submit" class="promo_btn send" value="send">
-                       </div>
-                       
-                   </div>
-                   
-                    
+                <div class="input__message">
+                    <textarea class="message-element" name="message" placeholder="Message"></textarea>
+                </div>
+                <div class="input__button">
+                    <label class="checkbox" for="subs"><input type="checkbox" name="subs" class="button__checkbox">
+                        subscribe to the newsletter</label>
+                    <input type="submit" class="descr__btn descr__btn--green" value="send">
+                </div>
+
+
             </form>
-           </div>
-          
-       
-   </section>
+        </div>
+
+
+    </section>
     <section class="footer">
-       <div class="container">
-        <footer class="bottom_contacts">
-            <div class="header">
-                <a href="#" class="logo">
-                    <div class="logo_wrap">
-                        <img src="icons/logo.svg" alt="logo" class="logo_image">
-                        <div class="logo_text">Dart 
-                            <br>
-                            <span>Service Manager</span>
-                        </div> 
+        <div class="container">
+            <footer class="bottom_contacts">
+                <div class="page-header">
+                    <a href="#" class="page-header__logo">
+                        <div class="logo__wrap">
+                            <img src="icons/logo.svg" alt="logo" class="logo__image">
+                            <div class="logo__text">Dart
+                                <br>
+                                <span>Service Manager</span>
+                            </div>
+                        </div>
+
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-list__item nav-list__item--home"><a href="#home">Home</a></li>
+                            <li class="nav-list__item nav-list__item--useful"><a href="#useful">Useful</a></li>
+                            <li class="nav-list__item nav-list__item--service"><a href="#service">Service</a></li>
+                            <li class="nav-list__item nav-list__item--team"><a href="#team">Our team</a></li>
+                            <li class="nav-list__item nav-list__item--contact"><a href="#contact">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="privacy-hrefs">
+                    <div class="privacy-hrefs__wrapper">
+                        <div class="privacy-policy"><a href="#">Privacy policy</a> </div>
+                        <ul class="privacy__items">
+
+                            <li class="privacy__item privacy__item--about"><a href="#">About Us</a> </li>
+                            <li class="privacy__item privacy__item--about"><a href="#">About Us</a></li>
+
+                        </ul>
                     </div>
-                   
-                </a>
-                <nav class="nav">
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="#home">Home</a></li>
-                        <li class="nav_item"><a href="#useful">Useful</a></li>
-                        <li class="nav_item"><a href="#service">Service</a></li>
-                        <li class="nav_item"><a href="#team">Our team</a></li>
-                        <li class="nav_item"><a href="#contact">Help</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="privacy_hrefs">
-                <div class="privacy">
-                    <div class="privacy_policy"><a href="#">Privacy policy</a> </div>
-                    <ul class="privacy_content">
-                        
-                        <li class="about"><a href="#">About Us</a> </li>
-                        <li class="about"><a href="#">About Us</a></li>
-                        
-                    </ul>
+                    <div class="contact-social">
+                        <a href="#" class="twitter twitter--product">
+                            <img class="social-media-img" src="icons/twitter.svg" alt="">
+                        </a>
+                        <a href="" class="facebook facebook--product">
+                            <img class="social-media-img" src="icons/facebook.svg" alt="">
+                        </a>
+                        <a href="" class="linkedin linkedin--product">
+                            <img class="social-media-img" src="icons/linkedin.svg" alt="">
+                        </a>
+
+                    </div>
                 </div>
-                <div class="contact_social">
-                    <a href="#" class="twitter">
-                        <img class="social_media_img" src="icons/twitter.svg" alt="">
-                    </a>
-                    <a href="" class="facebook">
-                     <img class="social_media_img" src="icons/facebook.svg" alt="">
-                    </a>
-                    <a href="" class="linkedin">
-                     <img class="social_media_img" src="icons/linkedin.svg" alt="">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </footer>
-       </div>
+
+            </footer>
+        </div>
     </section>
     <div class="popup">
-        <div class="popup_wrap">
-            <div class="popup_form">
-                <form action="#" class="contact_form">
-                    <div class="input_wrap">
-                        <div class="form_wrap">
-                            <input type="text" class="form_inp" name="firstName" placeholder="First name" required>
-                            <input type="text" class="form_inp" name="secondName" placeholder="Second Name" required>
-                              
+        <div class="popup-wrapper">
+            <div class="popup__form">
+                <form action="#" class="contact-us-form">
+                    <div class="form-input-wrap">
+                        <div class="input-blocks">
+                            <input type="text" class="input-element input-element--first" name="firstName"
+                                placeholder="First name" required>
+                            <input type="text" class="input-element input-element--second" name="secondName"
+                                placeholder="Second Name" required>
+
                         </div>
-                        
-                        <div class="form_wrap">
-                         <input type="email" class="form_inp" name="email" placeholder="E-mail" required>
-                         <input type="tel" class="form_inp" name="phone" placeholder="Phone">
+
+                        <div class="input-blocks">
+                            <input type="email" class="input-element input-element--email" name="email"
+                                placeholder="E-mail" required>
+                            <input type="tel" class="input-element input-element--phone" name="phone"
+                                placeholder="Phone">
                         </div>
-                        
+
                     </div>
-                    <div class="input_message">
-                        <textarea class="message" name="message" placeholder="Message"></textarea>
-                       </div>
-                       <div class="input_button">
-                           <label class="checkbox" for="subs"><input type="checkbox" name="subs" class="checkbox_whole"> subscribe to the newsletter</label>
-                           <div class="button_gs">
-                               <input type="submit" class="promo_btn send" value="send">
-                           </div>
-                           
-                       </div>
-                       
-                        
+                    <div class="input__message">
+                        <textarea class="message-element" name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="input__button">
+                        <label for="subs"><input type="checkbox" name="subs" class="button__checkbox"> subscribe to the
+                            newsletter</label>
+                        <div class="button__submit">
+                            <input type="submit" class="descr__btn descr__btn--green" value="send">
+                        </div>
+
+                    </div>
+
+
                 </form>
-                <div class="popup_close">X</div>
+                <div class="popup__close">X</div>
             </div>
         </div>
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>

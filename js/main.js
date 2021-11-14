@@ -1,17 +1,17 @@
 
 /* Animating Tabs */
 function aniTabs(){
-    let tabs =document.querySelectorAll(".tabs_item");
+    let tabs =document.querySelectorAll(".service-tabs__item");
 
     for( let tab of tabs){
-        if (!tab.classList.contains("tabs_item_active")){
+        if (!tab.classList.contains("service-tabs__item--active")){
             tab.addEventListener('click', e=>{          
                 for (let prevTab of tabs){
-                    if (prevTab.classList.contains("tabs_item_active")){
-                        prevTab.classList.remove("tabs_item_active");
+                    if (prevTab.classList.contains("service-tabs__item--active")){
+                        prevTab.classList.remove("service-tabs__item--active");
                     }
                 }
-                tab.classList.add("tabs_item_active");          
+                tab.classList.add("service-tabs__item--active");          
             });
     
         }
@@ -24,10 +24,10 @@ function aniTabs(){
 class Slider{
 	constructor(selector){
 		this.root = document.querySelector(selector);
-		this.btnPrev = this.root.querySelector('.arrows .prev');
-		this.btnNext = this.root.querySelector('.arrows .next');
+		this.btnPrev = this.root.querySelector('.team-crew__arrows .arrow__prev');
+		this.btnNext = this.root.querySelector('.team-crew__arrows .arrow__next');
 	
-		this.images = this.root.querySelectorAll('.card');
+		this.images = this.root.querySelectorAll('.worker-card');
 		this.i = 0;
 		this.animated = false;
 
@@ -68,8 +68,8 @@ class Slider{
 	toogleSlides(imgHide, showImg,isNext=false){
 	
 		this.animated = true;
-        console.log(showImg);
-		showImg.classList.add('showed');
+       
+		showImg.classList.add('worker-card--showed');
 		
 		showImg.animate( isNext ? this.rightAnim :this.leftAnim, {duration:500} );
 		let hideAnimate = imgHide.animate(isNext ? this.leftAnim : this.rightAnim,
@@ -78,7 +78,7 @@ class Slider{
 				direction:'reverse'
 			});
 		hideAnimate.addEventListener("finish",()=>{
-			imgHide.classList.remove('showed');
+			imgHide.classList.remove('worker-card--showed');
 			this.animated = false;
 		});
 
@@ -99,7 +99,7 @@ function plusSlides(n) {
  
 function showSlides(n){
     
-    let slides = document.getElementsByClassName("worker_card");
+    let slides = document.getElementsByClassName("worker-cards");
     if(n>slides.length) slideIndex=1;
     if (n<1) slideIndex = slides.length;
     for (let slide of slides){
@@ -135,7 +135,7 @@ function btnBuyDo(){
     let btnBuy=document.querySelector("#btn_buy");
     let tryForBtn=document.querySelector("#try_for_btn");
     let popup = document.querySelector(".popup");
-    let popupClose = document.querySelector(".popup_close");
+    let popupClose = document.querySelector(".popup__close");
 
     btnBuy.addEventListener("click",popupOpen);
     tryForBtn.addEventListener("click",popupOpen);
@@ -173,7 +173,7 @@ function smoothScroll(){
 window.addEventListener("DOMContentLoaded", ()=>{
     aniTabs();
     /*  slideIndexInit(); */
- let slider =new Slider('.team_crew');
+ let slider =new Slider('.team-crew');
  setInterval(function(){
     slider.next();
 }, 3000);
